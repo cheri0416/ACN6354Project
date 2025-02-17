@@ -1,6 +1,10 @@
+Library\Bee\artifacts\mvdfrm\Unity.Cinemachine.Editor.ref.dll_397E3F004AF07FAF.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Cinemachine.ref.dll_77EC0F35C376A022.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.EditorCoroutines.Editor.ref.dll_34ED10A34098B2DB.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.InputSystem.ForUI.ref.dll_0478B67D1094CE70.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.InputSystem.ref.dll_FD2EC87C14EBE081.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Mathematics.Editor.ref.dll_9A20CFD48BC11F43.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Mathematics.ref.dll_E8EFDB1B8D5C174E.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Multiplayer.Center.Common.ref.dll_EE36537354EA42C8.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Multiplayer.Center.Editor.ref.dll_EB1F4B6E56116D4A.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Performance.Profile-Analyzer.Editor.ref.dll_65A192712782EB2B.mvfrm
@@ -11,6 +15,8 @@ Library\Bee\artifacts\mvdfrm\Unity.Services.Core.Analytics.ref.dll_EDA1682A714EA
 Library\Bee\artifacts\mvdfrm\Unity.Services.Core.Components.ref.dll_066D80BB5B7F72E3.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Services.Core.Environments.ref.dll_7E0AC2CDE81D9C6D.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Services.Core.ref.dll_131AC9C5EC6E6517.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Splines.Editor.ref.dll_FBEF939465B2E7A7.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Splines.ref.dll_99352414147018AA.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll_D3B9364D6FB03093.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll_E668CD773429A040.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TestTools.CodeCoverage.Editor.ref.dll_F09CF4826CE11CD9.mvfrm
