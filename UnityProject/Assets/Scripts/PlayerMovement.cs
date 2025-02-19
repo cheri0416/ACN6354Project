@@ -5,8 +5,8 @@ public class PlayerMovement : MonoBehaviour
     public float forwardForce = 500f;
     public float lateralForce = 15f;
     public float targetSpeed = 100f;
-    public float maxLateralPos = 3f; 
-
+    public float maxLateralPos = 3f;
+     
     private Rigidbody rb;
 
     private void Awake()
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(currentSpeed < targetSpeed)
         { 
-            rb.AddForce(Vector3.forward * 1000f * Time.fixedDeltaTime, ForceMode.Force);
+            rb.AddForce(Vector3.forward * 800f * Time.fixedDeltaTime, ForceMode.Force);
         }
         else if(currentSpeed > targetSpeed)
         {
@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
         {
             GameStateManager.instance.ChangeState(GameState.GameOver);
         }
-        
-      }
+    }
+
+    
 }
