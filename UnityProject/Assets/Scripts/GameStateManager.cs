@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 
 public enum GameState
 {
@@ -64,6 +64,12 @@ public class GameStateManager : MonoBehaviour
    public void ChangeToGameOver()
    {
 	   ChangeState(GameState.GameOver);
+   }
+   public void RestartCurrentScene()
+   {
+	   SceneManager.LoadScene("SampleScene");
+	   Awake();
+
    }
 
    private IEnumerator TransitionToState(GameState newState)
