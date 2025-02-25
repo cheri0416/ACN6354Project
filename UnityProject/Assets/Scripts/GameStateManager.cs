@@ -1,6 +1,8 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public enum GameState
 {
@@ -19,6 +21,8 @@ public class GameStateManager : MonoBehaviour
    public GameObject InGameMenuUi;
    public GameObject PauseMenuUi;
    public GameObject GameOverMenuUi;
+
+   public Button restartButton;
 
    public int delay = 1;
 
@@ -40,6 +44,11 @@ public class GameStateManager : MonoBehaviour
    private void Start()
    {
 	   ChangeState(GameState.MainMenu);
+
+	   if (restartButton!= null)
+       {
+            restartButton.onClick.AddListener(OnRestartButtonPressed);
+       }
    }
 
    public void ChangeState(GameState newState)
@@ -65,12 +74,25 @@ public class GameStateManager : MonoBehaviour
    {
 	   ChangeState(GameState.GameOver);
    }
-   public void RestartCurrentScene()
+   
+   public void OnRestartButtonPressed()
    {
+        ChangeState(GameState.MainMenu);
+		{
+		//Track button press
+        Analytics.CustomEvent("restart_button_pressed", new System.Collections.Generic.Dictionary<string, object>
+        {
+            { "button_pressed", true },
+            { "timestamp", System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") }
+        });
+		
 	   SceneManager.LoadScene("SampleScene");
 	   Awake();
-
+	   Debug.Log("Restart Button Pressed");
+		}
+       
    }
+   
 
    private IEnumerator TransitionToState(GameState newState)
    {
