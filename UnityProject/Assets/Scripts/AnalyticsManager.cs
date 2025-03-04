@@ -1,16 +1,39 @@
 using UnityEngine;
+using Unity.Services.Core;
+using System;
+using UnityEngine.UI;
+using Unity.Services.Analytics;
 
-public class AnalyticsManager : MonoBehaviour
+
+namespace Unity.Service.Analytics
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+	public class AnalyticsManager : MonoBehaviour
     {
-        
-    }
+       
+        async void Start()
+        {
+            await UnityServices.InitializeAsync();
+            Debug.Log($"Started UGS Analytics Sample with user ID: {AnalyticsService.Instance.GetAnalyticsUserID()}");
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void GiveConsent()
+        {
+            AnalyticsService.Instance.StartDataCollection();
+            Debug.Log($"Consent provided. SDK now collecting data!");
+        }
+    
+        public void OnRestartButtonPressed()
+        {
+            RestartButtonPressedEvent.OnRestartButtonPressed();
+           
+            
+        }
     }
 }
+    
+
+    
+    
+
+
+
