@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1896443708832070387}
   - component: {fileID: 7916824853735101984}
   - component: {fileID: 8446125442780902432}
-  - component: {fileID: 2677523499019225020}
+  - component: {fileID: 7019260132116323510}
   m_Layer: 0
   m_Name: Obstacle (2)
   m_TagString: Obstacle
@@ -109,7 +109,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2677523499019225020
+--- !u!54 &7019260132116323510
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 4847308139578659547}
   - component: {fileID: 2332620259151958899}
   - component: {fileID: 4451770006674597013}
-  - component: {fileID: 6096666503061032521}
+  - component: {fileID: 6525488324146724310}
   m_Layer: 0
   m_Name: Obstacle (1)
   m_TagString: Obstacle
@@ -245,7 +245,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6096666503061032521
+--- !u!54 &6525488324146724310
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 5684922811709926392}
   - component: {fileID: 8740554035122804405}
   - component: {fileID: 769649775870185762}
-  - component: {fileID: 2927252029250413614}
+  - component: {fileID: 2793824299448060696}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -428,7 +428,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2927252029250413614
+--- !u!54 &2793824299448060696
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
